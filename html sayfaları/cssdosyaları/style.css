@@ -1,0 +1,19 @@
+body{
+    font-family: 'Raleway', sans-serif;
+
+}
+.hakkımzıdacard{
+    margin: auto;
+   max-width:  600px;
+   height: auto;
+}
+.özgecmiş{
+   max-width:  500px ;
+margin: auto;
+}
+#tablo {
+    padding: 10px;
+}
+.Itable{
+    padding: 40px;
+}
