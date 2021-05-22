@@ -50,58 +50,92 @@
             </div>
         </div>
     </nav>
-    <main class="p-5 text-center">
+    <main class="p-5 ">
+         <script type="text/javascript">
+
+					function getParameterByName(name, url) 
+					{
+		            	if (!url) url = window.location.href;
+    		       		name = name.replace(/[\[\]]/g, '\\$&');
+        		    	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            		    	results = regex.exec(url);
+           				if (!results) return null;
+           				if (!results[2]) return '';
+           				return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        			}
+
+  				    var name = getParameterByName('name');
+  				    var email = getParameterByName('email');
+  				    var message = getParameterByName('message');
+
+				</script>
+        
+        
         <div class="container">
             <header>
-                <h2>Divriği Ulu Cami</h2>
+                <h2>Tebrikler <script>document.write(name);
+                </script> Gönderim Başarılı !!!</h2>
+           <hr>
             </header>
-            <div class="row p-5">
+            <div class="row">
+               
 
-                <div class="col-lg-6 p-3 ">
-                    <div class="ratio ratio-16x9">
+				<table class="table">
+						<thead class="table-info" >
+							<tr>
+								<th colspan="2">Gönderdiğiniz Bilgiler</th>
+							</tr>
+						</thead>
 
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tjZsSUYZDgI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-3" style="text-align: left;">
-                    <p>1228 yılına Anadolu Selçuklu Devletine bağlı Mengücek beyliğinin başında olan Ahmet Şah’ın eşi
-                        Melike Turan tarafınca inşa ettirilmiştir.
-
-                    </p>
-                    <p> Bu yapının bulunduğu kasabada fazlaca selçuklu eserleri de bulunmaktadır. Birişinde bulunan
-                        Darüşşifa’da onlara ait eserlerdendir. Üç boyutlu detaylı geometrik stillerin ve bitkisel
-                        benzerlerin bulunduğu caminin bir örneği daha yoktur. </p>
-                    <p> Dört kapısı olan cami ve Darüşşifanın isimleri, Şifahane taç kapısı, kuzey taç kapısı, şah
-                        mahfili taç kapısı ve cami batı taç kapısıdır. Mimarlık ve mühendislik harikası olan cami en
-                        önemli yapılardan biri olup, mutlaka görülmesi gereken yerlerden biridir. Bu camiyi gezdiğiniz
-                        sırada bol bol fotoğraf çektirmeyi unutmamalısınız.</p>
-                    <a href="sivas.html" style="float: right;">Geri dön</a>
-                </div>
-
-
+						<tbody>
+							<tr>
+								<td>İsminiz</td>
+								<td>
+									<script>document.write(name);
+									</script>
+								</td>
+							</tr>
+	
+							<tr>
+								<td>E-Mail</td>
+								<td>
+									<script>document.write(email);
+									</script>
+								</td>
+							</tr>
+	
+							<tr>
+								<td>Mesajınız</td>
+								<td>
+									<script>document.write(message);
+									</script>
+								</td>
+							</tr>
+	
+						</tbody>
+					
+				</table>	
             </div>
         </div>
     </main>
 
 
-    <!-- Footer -->
-    <footer class="text-center text-white " style="background-color: #25693c;">
+  <!-- Footer -->
+  <footer class="text-center text-white " style="background-color: #25693c;">
+    <!-- Grid container -->
+    <div class="container p-4">
         <!-- Grid container -->
-        <div class="container p-4">
-            <!-- Grid container -->
 
-            <!-- Copyright -->
-            <div class="text-center p-3" style="background-color: #25693c;">
-                Web Teknolojileri Ödevi ©:
-                <a class="text-white" href="index.html">Ahmet Hakan Arı</a>
-            </div>
-        </div>
         <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
+        <div class="text-center p-3" style="background-color: #25693c;">
+            Web Teknolojileri Ödevi ©:
+            <a class="text-white" href="index.html">Ahmet Hakan Arı</a>
+        </div>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
