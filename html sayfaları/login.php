@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="cssdosyaları/style.css">
-    <title>Divriği Ulu Cami · Ahmet Hakan Arı</title>
+    <title>Login · Ahmet Hakan Arı</title>
 </head>
 
 <body>
@@ -26,13 +26,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Hakkımızda</a>
+                        <a class="nav-link"  href="index.html">Hakkımızda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="özgeçmiş.html">Özgeçmiş</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"  href="sivas.html">Şehrim</a>
+                        <a class="nav-link" href="sivas.html">Şehrim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="mirasımız.html">Mirasımız</a>
@@ -44,50 +44,40 @@
                         <a class="nav-link" href="iletişim.html">İletişim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
+                        <a class="nav-link active" aria-current="page" href="login.php">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <main class="p-5 text-center">
-        <div class="container">
-            <header>
-                <h2>Divriği Ulu Cami</h2>
-            </header>
-            <div class="row p-5">
+    <main class="p-5">
+        <div class="container"id="login" >
 
-                <div class="col-lg-6 p-3 ">
-                    <div class="ratio ratio-16x9">
-
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tjZsSUYZDgI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-6 p-3" style="text-align: left;">
-                    <p>1228 yılına Anadolu Selçuklu Devletine bağlı Mengücek beyliğinin başında olan Ahmet Şah’ın eşi
-                        Melike Turan tarafınca inşa ettirilmiştir.
-
-                    </p>
-                    <p> Bu yapının bulunduğu kasabada fazlaca selçuklu eserleri de bulunmaktadır. Birişinde bulunan
-                        Darüşşifa’da onlara ait eserlerdendir. Üç boyutlu detaylı geometrik stillerin ve bitkisel
-                        benzerlerin bulunduğu caminin bir örneği daha yoktur. </p>
-                    <p> Dört kapısı olan cami ve Darüşşifanın isimleri, Şifahane taç kapısı, kuzey taç kapısı, şah
-                        mahfili taç kapısı ve cami batı taç kapısıdır. Mimarlık ve mühendislik harikası olan cami en
-                        önemli yapılardan biri olup, mutlaka görülmesi gereken yerlerden biridir. Bu camiyi gezdiğiniz
-                        sırada bol bol fotoğraf çektirmeyi unutmamalısınız.</p>
-                    <a href="sivas.html" style="float: right;">Geri dön</a>
+            <form action="git-Login.php" method="POST" id="içerik">
+                    <header><h2>login</h2></header>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" class="form-control" placeholder="Email '123@sakarya.edu.tr'"
+                        required="required">
                 </div>
 
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="Şifre '123'"
+                        required="required">
+                </div>
 
-            </div>
+                <button class="btn btn btn-info" type="submit">Gönder</button>
+
+
+
+            </form>
         </div>
     </main>
 
 
-    <!-- Footer -->
+
+
     <footer class="text-center text-white " style="background-color: #25693c;">
         <!-- Grid container -->
         <div class="container p-4">
@@ -102,6 +92,10 @@
         <!-- Copyright -->
     </footer>
     <!-- Footer -->
+    <!-- hakkımzıda bitiş-->
+
+
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -112,9 +106,9 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-      -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
